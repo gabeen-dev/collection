@@ -10,11 +10,11 @@ import java.time.LocalDateTime;
 @Entity
 @Getter
 @NoArgsConstructor
-public class SubscriptionPlans extends BaseEntity {
+public class Plan extends BaseEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private int planId;
 
 	@Column(nullable = false)
 	private String type;

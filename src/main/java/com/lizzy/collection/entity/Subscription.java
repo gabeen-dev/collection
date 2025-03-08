@@ -14,7 +14,7 @@ public class Subscription extends BaseEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private int subscriptionId;
 
 	@Column(nullable = false)
 	private LocalDateTime endDate;

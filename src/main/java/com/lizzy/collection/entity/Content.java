@@ -8,24 +8,31 @@ import lombok.NoArgsConstructor;
 @Entity
 @Getter
 @NoArgsConstructor
-public class Users extends BaseEntity {
+public class Content extends BaseEntity {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private int contentId;
 
 	@Column(nullable = false)
-	private String email;
-
-	@Column
-	private String password;
-
-	@Column
-	private String name;
+	private String contentType;
 
 	@Column(nullable = false)
-	private String role;
+	private String title;
+
+	@Column(nullable = false)
+	private int viewCount;
+
+	@Column(nullable = false)
+	private String description;
+
+	@Column
+	private String url;
+
+	@Column(nullable = false)
+	private double rating;
 
 	@Column(nullable = false)
 	private String status;
+
 }
