@@ -1,4 +1,4 @@
-package com.lizzy.collection.entity.baseEntity;
+package com.lizzy.collection.entity.common;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;
@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 @Getter
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-public abstract class Timestamped {
+public abstract class BaseEntity {
 
 	@CreatedDate
 	@Column(updatable = false, nullable = false)
